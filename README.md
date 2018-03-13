@@ -1,6 +1,7 @@
 # pachong
-get something on The Internet
-url请自行修改
+
+
+ url请自行修改
  for b in range(0,60): 请根据需要爬取的豆瓣账号里的电影数和书籍数将60改成相当的数字
 
 【看过的电影】
@@ -131,23 +132,6 @@ def parse_one_page(html):
 
         n=n+1
         print(n)
-    
-        # yield {#yield相当于不占内存的print
-        #     '电影名称': item[0],#split是分隔符
-        #     '上映时间': item[1].split("/")[0],
-        #     '演员':item[1].split("/")[1:],
-        #     '语言':item[1].split("/")[-1],
-        #     '评分': item[2],
-        #     '观看时间': item[3],
-        #     '评价': item[4],
-        # }
-        
-
-# def write_to_file(content):
-#     with open('see.txt', 'a', encoding='utf-8') as f:
-#         f.write(json.dumps(content, ensure_ascii=False) + '\n')#输出中文格式
-#         f.close()
-
 
 def main(start):
     n=start+1
